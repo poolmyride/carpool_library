@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Poolmyride Sample</string>
+
+    <string-array name="fetch_carpool">
+        <item>Fetch Latest Carpools</item>
+        <item>Fetch Carpools near a particular location</item>
+        <item>Fetch Carpools on a particular route</item>
+        <item>Fetch Realtime Users Carpools</item>
+    </string-array>
+    <string name="title_activity_carpool">CarpoolActivity</string>
+    <string name="user_name">User Name</string>
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+    <string name="title_activity_location_carpool">LocationCarpoolActivity</string>
+    <string name="title_activity_route_carpool">RouteCarpoolActivity</string>
+    <string name="title_activity_filter_carpool">FilterCarpoolActivity</string>
+    <string name="fetch_carpool">Fetch Carpool</string>
+    <string name="fetching_carpools">Fetching Carpools...</string>
+    <string name="no_carpool_found">No Carpool found</string>
 </resources>
