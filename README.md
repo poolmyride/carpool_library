@@ -1,4 +1,4 @@
-# carpool_library
+# Carpool Rideshare Library
 
 [Poolmyride Carpool Library Wiki](../../wiki)
 
