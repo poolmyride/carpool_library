@@ -25,15 +25,13 @@
 
             <TextView
                 android:id="@+id/user_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_view_style"
                 android:layout_margin="5dp"
                 android:ellipsize="end"
                 android:gravity="left"
                 android:maxLines="2"
                 android:text="@string/user_name"
-                android:textColor="#9D989E"
-                android:textSize="20sp" />
+                android:textSize="@dimen/small_text_size" />
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -29,28 +29,19 @@
             android:layout_height="60dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/text_view_style"
             android:gravity="center"
             android:text="@string/fetching_carpools"
-            android:textColor="#9D989E"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/medium_text_size" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/no_realtime_carpool_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:visibility="gone">
+        style="@style/no_carpool_layout_style">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/text_view_style"
             android:text="@string/no_carpool_found"
-            android:textColor="#9D989E"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/large_text_size" />
     </LinearLayout>
 </RelativeLayout>
