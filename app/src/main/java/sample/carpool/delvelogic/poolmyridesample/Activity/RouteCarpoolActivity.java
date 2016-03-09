@@ -27,14 +27,14 @@ public class RouteCarpoolActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_route_carpool);
+        setContentView(R.layout.activity_carpool);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         carPoolList = new ArrayList<CarPool>();
 
-        final LinearLayout progressLayout = (LinearLayout) findViewById(R.id.progress_route_layout);
-        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.route_carpool_list);
-        final LinearLayout noCarpoolLayout = (LinearLayout) findViewById(R.id.no_route_carpool_layout);
+        final LinearLayout progressLayout = (LinearLayout) findViewById(R.id.progress_layout);
+        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.carpool_list);
+        final LinearLayout noCarpoolLayout = (LinearLayout) findViewById(R.id.no_carpool_layout);
         viewList = new ArrayList<View>();
         viewList.add(progressLayout);
         viewList.add(recyclerView);
@@ -58,9 +58,9 @@ public class RouteCarpoolActivity extends AppCompatActivity {
             public void onSuccess(ArrayList<CarPool> carpools) {
                 carPoolList = carpools;
                 recyclerView.setAdapter(new CarpoolAdapter(RouteCarpoolActivity.this, carPoolList));
-                if (carPoolList.size() > 0) {
+                if (carPoolList.size() > 0)
                     checkVisibility(recyclerView);
-                } else
+                else
                     checkVisibility(noCarpoolLayout);
             }
 

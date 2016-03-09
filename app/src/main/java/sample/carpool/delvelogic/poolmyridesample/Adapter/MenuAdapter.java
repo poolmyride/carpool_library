@@ -12,11 +12,11 @@ import sample.carpool.delvelogic.poolmyridesample.R;
 /**
  * Created by himanshu on 04/03/16.
  */
-public class FetchCarpoolAdapter extends BaseAdapter {
+public class MenuAdapter extends BaseAdapter {
     Context ctx;
     String[] fetchCarpool;
 
-    public FetchCarpoolAdapter(Context ctx, String[] fetchCarpool) {
+    public MenuAdapter(Context ctx, String[] fetchCarpool) {
         this.ctx = ctx;
         this.fetchCarpool = fetchCarpool;
     }
