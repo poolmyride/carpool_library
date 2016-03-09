@@ -32,9 +32,9 @@ public class LatestCarpoolActivity extends AppCompatActivity {
 
         carPoolList = new ArrayList<CarPool>();
 
-        final LinearLayout progressLayout = (LinearLayout) findViewById(R.id.progress_latest_layout);
-        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.latest_carpool_list);
-        final LinearLayout noCarpoolLayout = (LinearLayout) findViewById(R.id.no_latest_carpool_layout);
+        final LinearLayout progressLayout = (LinearLayout) findViewById(R.id.progress_layout);
+        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.carpool_list);
+        final LinearLayout noCarpoolLayout = (LinearLayout) findViewById(R.id.no_carpool_layout);
         viewList = new ArrayList<View>();
         viewList.add(progressLayout);
         viewList.add(recyclerView);
@@ -50,9 +50,9 @@ public class LatestCarpoolActivity extends AppCompatActivity {
             public void onSuccess(ArrayList<CarPool> carpools) {
                 carPoolList = carpools;
                 recyclerView.setAdapter(new CarpoolAdapter(LatestCarpoolActivity.this, carPoolList));
-                if (carPoolList.size() > 0) {
+                if (carPoolList.size() > 0)
                     checkVisibility(recyclerView);
-                } else
+                else
                     checkVisibility(noCarpoolLayout);
             }
 

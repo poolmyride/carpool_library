@@ -55,9 +55,9 @@ public class RealTimeUserCarpoolActivity extends AppCompatActivity {
             public void onSuccess(ArrayList<CarPool> carpools) {
                 carPoolList = carpools;
                 recyclerView.setAdapter(new RealTimeCarpoolAdapter(RealTimeUserCarpoolActivity.this, carPoolList));
-                if (carPoolList.size() > 0) {
+                if (carPoolList.size() > 0)
                     checkVisibility(recyclerView);
-                } else
+                else
                     checkVisibility(noCarpoolLayout);
             }
 

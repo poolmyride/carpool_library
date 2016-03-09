@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Activity.LatestCarpoolActivity"
-    tools:showIn="@layout/activity_carpool">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/latest_carpool_list"
+        android:id="@+id/carpool_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"/>
+        android:visibility="gone" />
+
     <LinearLayout
-        android:id="@+id/progress_latest_layout"
+        android:id="@+id/progress_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
@@ -28,28 +26,20 @@
             android:layout_height="60dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/text_view_style"
+            android:gravity="center"
             android:text="@string/fetching_carpools"
-            android:textColor="#9D989E"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/medium_text_size" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/no_latest_carpool_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:visibility="gone">
+        android:id="@+id/no_carpool_layout"
+        style="@style/no_carpool_layout_style">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/text_view_style"
             android:text="@string/no_carpool_found"
-            android:textColor="#9D989E"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/large_text_size" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -33,17 +33,17 @@ public class CarpoolAdapter extends RecyclerView.Adapter<CarpoolAdapter.CarpoolV
     }
 
     public class CarpoolViewHolder extends RecyclerView.ViewHolder {
-        ImageView userImage;
-        TextView source;
-        TextView destination;
-        TextView userName;
+        ImageView userIv;
+        TextView sourceTv;
+        TextView destinationTv;
+        TextView userNameTv;
 
         public CarpoolViewHolder(View itemView) {
             super(itemView);
-            userImage = (ImageView) itemView.findViewById(R.id.user_image);
-            source = (TextView) itemView.findViewById(R.id.source);
-            destination = (TextView) itemView.findViewById(R.id.destination);
-            userName = (TextView) itemView.findViewById(R.id.user_name);
+            userIv = (ImageView) itemView.findViewById(R.id.user_image);
+            sourceTv = (TextView) itemView.findViewById(R.id.source);
+            destinationTv = (TextView) itemView.findViewById(R.id.destination);
+            userNameTv = (TextView) itemView.findViewById(R.id.user_name);
         }
     }
 
@@ -56,11 +56,11 @@ public class CarpoolAdapter extends RecyclerView.Adapter<CarpoolAdapter.CarpoolV
     @Override
     public void onBindViewHolder(CarpoolAdapter.CarpoolViewHolder holder, int position) {
         CarPool carPool = carPoolList.get(position);
-        holder.source.setText(carPool.getSource());
-        holder.destination.setText(carPool.getDestination());
-        holder.userName.setText(carPool.getUser().getUserName());
+        holder.sourceTv.setText(carPool.getSource());
+        holder.destinationTv.setText(carPool.getDestination());
+        holder.userNameTv.setText(carPool.getUser().getUserName());
         String url = carPool.getUser().getImage();
-        fetchImage(url, holder.userImage);
+        fetchImage(url, holder.userIv);
 
 
     }

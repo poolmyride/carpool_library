@@ -39,8 +39,8 @@ public class RealTimeCarpoolAdapter extends RecyclerView.Adapter<RealTimeCarpool
 
         public FilterViewHolder(View itemView) {
             super(itemView);
-            userImage = (ImageView) itemView.findViewById(R.id.user_image2);
-            userName = (TextView) itemView.findViewById(R.id.user_name2);
+            userImage = (ImageView) itemView.findViewById(R.id.userImageView);
+            userName = (TextView) itemView.findViewById(R.id.userNameTv);
         }
     }
 

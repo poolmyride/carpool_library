@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import sample.carpool.delvelogic.poolmyridesample.Adapter.FetchCarpoolAdapter;
+import sample.carpool.delvelogic.poolmyridesample.Adapter.MenuAdapter;
 import sample.carpool.delvelogic.poolmyridesample.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         mainListView = (ListView) findViewById(R.id.mainListView);
         String[] fetchCarpool = getResources().getStringArray(R.array.fetch_carpool);
 
-        mainListView.setAdapter(new FetchCarpoolAdapter(this, fetchCarpool));
+        mainListView.setAdapter(new MenuAdapter(this, fetchCarpool));
 
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
