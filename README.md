@@ -11,7 +11,11 @@ Developers can fetch
 ## Pre-Requisite
 Add following in your build.gradle
 
-    compile 'carpool.delvelogic.library:pmr-carpools:0.0.5'
+    compile 'carpool.delvelogic.library:pmr-carpools:0.0.7'
+    
+After adding the above line make sure you initialize the library in your launcher activity with the context
+
+    CarpoolRequest.init(context)
 
 ### Fetch Carpools on a route
 
