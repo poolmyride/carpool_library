@@ -41,7 +41,7 @@
 
         <TextView
             style="@style/text_view_style"
-            android:text="@string/no_carpool_found"
+            android:text="@string/no_user_found"
             android:textSize="@dimen/large_text_size" />
     </LinearLayout>
 </RelativeLayout>
