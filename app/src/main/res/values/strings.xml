@@ -17,4 +17,5 @@
     <string name="fetch_carpool">Fetch Carpool</string>
     <string name="fetching_carpools">Fetching Carpools...</string>
     <string name="no_carpool_found">No Carpool found</string>
+    <string name="no_user_found">No User Found</string>
 </resources>
